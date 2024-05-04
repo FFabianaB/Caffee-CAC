@@ -8,8 +8,6 @@
 
 body {
   background-color: var(--color-fondo);
-  /* #d39436; */
-
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -128,9 +126,9 @@ body {
     margin-top: 6px;
 }
 
-.bg-carousel-ba1 { background-image: url(../IMG/ba1-min.jpg); }
-.bg-carousel-ba2 { background-image: url(../IMG/ba2-min.jpg); }
-.bg-carousel-ba3 { background-image: url(../IMG/ba3-min.jpg); }
+.bg-carousel-ba1 { background-image: url(./IMG/ba1-min.jpg); }
+.bg-carousel-ba2 { background-image: url(./IMG/ba2-min.jpg); }
+.bg-carousel-ba3 { background-image: url(./IMG/ba3-min.jpg); }
 
 .carousel-item {
   background-size: cover;
