@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root {
-  --color-texto: #433605;
-  --color-nav: linear-gradient(to right, #ffb75e, #7e4d03);
+  --color-texto: #000000;
+  --color-nav: linear-gradient(to right,#f4e2ce, #c7a17a);
   --color-hover: rgba(207, 142, 45, 0.576);
-  --color-iniciarSesion: rgba(255, 128, 25, 0.416);
+  --color-iniciarSesion: #9b7d5e;
   --color-fondo: #000000;
+}
+html {
+	font-size: 80%;
+	font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -22,6 +28,10 @@ body {
   z-index: 10;
 }
 
+
+/* ********************************** */
+/*               NavBar               */
+/* ********************************** */
 .navegacion {
   display: flex;
   justify-content: space-between;
@@ -118,10 +128,44 @@ body {
   border-radius: 5px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+/* ********************************** */
+/*               BANNER               */
+/* ********************************** */
+.banner {
+  display:block;
+  margin-top: 15rem;
+  margin-left: 5rem;
+	position: absolute;
+	top: 0; left: 0; width: 100%;
+  z-index: 1;
+}
+
+.content-banner {
+	max-width: 90rem;
+	margin: 0 auto;
+	
+}
+
+.content-banner p {
+	color: #fff;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+	font-weight: 500;
+}
+
+.content-banner h2 {
+	color: #fff;
+	font-size: 3.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
 
 
-/* CAROUSEL
--------------------------------------------------- */
+
+
+/* ********************************** */
+/*             Carrusel               */
+/* ********************************** */
 .container a{
     margin-top: 6px;
 }
