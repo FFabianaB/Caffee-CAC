@@ -8,12 +8,17 @@
   --color-iniciarSesion: #9b7d5e;
   --color-fondo: #000000;
 }
+
+
 html {
+  cursor: url('IMG/cursor.png'), auto;
+
 	font-size: 80%;
 	font-family: 'Poppins', sans-serif;
 }
 
 body {
+  
   background-color: var(--color-fondo);
   margin: 0;
   padding: 0;
@@ -28,7 +33,20 @@ body {
   top: 0;
   z-index: 10;
 }
-
+/* Barra de desplazamiento vertical/horizontal */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo */
+}
+::-webkit-scrollbar-thumb {
+  background: #c7a17a; 
+  border-radius: 6px; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a28263 
+}
 
 /* ********************************** */
 /*               NavBar               */
@@ -151,13 +169,13 @@ body {
 
 .dropdown-item{
   color: #000000;
-  
+
 }
 .dropdown-item:hover{
   background-color: rgb(152, 115, 72);
 }
 /* ********************************** */
-/*               BANNER               */
+/*              banner               */
 /* ********************************** */
 .banner {
   display:block;
