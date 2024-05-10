@@ -196,7 +196,7 @@ body {
 
 .content-banner p {
 	color: #fff;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	margin-bottom: 1rem;
 	font-weight: 500;
 }
@@ -246,19 +246,36 @@ body {
 /*          MediaQuerys               */
 /* ********************************** */
 
+@media (min-width: 768px) { 
+  /* Se muestra por debajo de 768 */
+  .dropdown{
+    display: none;
+  }
+  }
+
 @media (max-width: 768px) {
-    .anclaLogo {
-      font-size: 1.1rem;
+  /* Se muestra como maximo hasta */
+  
+  .linkNav{
+    display: none;
+  }
+  
+  .anclaLogo {
+   font-size: 2rem;
+    
     }
   
-    .listaItem .linkNav {
-      font-size: 1rem;
+  .listaItem .linkNav  a{
+     font-size: 1rem;
     }
   }
   
 @media (max-width: 576px) {
-    .anclaLogo {
-      font-size: 1rem;
+  .navegacion{
+    margin-bottom: 50px;
+  }
+  .anclaLogo {
+      font-size: 2rem;
     }
   
     .listaItem .linkNav {
