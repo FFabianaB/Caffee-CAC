@@ -4,24 +4,28 @@
   --drop-down: #a98158;
   --color-hover: rgba(207, 142, 45, 0.576);
   --color-iniciarSesion: #9b7d5e;
-  --color-fondo: #000000;
+  --color-fondo: #f4e2ce;
 }
+
 html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   cursor: url("IMG/cursor.png"), auto;
   font-size: 80%;
 }
 body {
   background-color: var(--color-fondo);
-  margin: 0;
-  padding: 0;
+
   width: 100vw;
   height: 100vh;
 }
+
 .header {
+  margin: 0;
   background-image: var(--color-nav);
   height: 10vh;
-  position: sticky;
-  top: 0;
+
   z-index: 10;
 }
 /* Barra de desplazamiento vertical/horizontal */
@@ -45,9 +49,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5rem 0;
+
   margin-left: 40px;
   margin-right: 40px;
-  padding: 1.5rem 0;
 }
 .anclaLogo {
   font-family: "Comforter Brush", cursive;
@@ -138,7 +143,7 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 /* ********************************** */
-/*               DropDown               */
+/*            DropDown               */
 /* ********************************** */
 .btn i {
   color: black;
@@ -216,6 +221,52 @@ body {
   height: 37rem;
   min-height: 95vh;
 }
+/* ********************************** */
+/*              CARDS                 */
+/* ********************************** */
+.cards {
+  background-image: url(IMG/granos\ png.png);
+  background-size: contain;
+  height: 70vh;
+  width: 100vw;
+}
+.card {
+  background-color: #f1f1f1e4;
+  width: 20vw;
+  display:flex;
+  text-align: center;
+}
+.card img {
+  height: 45vh;}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.up a,.up a img {
+  height: 10vh;
+  width: 6vw;
+  position: fixed;
+  z-index: 10;
+  right: 2vh;
+
+  bottom: 7vh;
+}
+
+/* ********************************** */
+/*          Footer                    */
+/* ********************************** */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  color: white;
+}
+
 /* ********************************** */
 /*          MediaQuerys               */
 /* ********************************** */
