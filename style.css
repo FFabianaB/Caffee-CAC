@@ -18,9 +18,12 @@ body {
   background-color: var(--color-fondo);
 
   width: 100vw;
-  height: 100vh;
+  
 }
-
+main{
+  flex: 1;
+  margin-bottom: 111px;
+}
 .header {
   margin: 0;
   background-image: var(--color-nav);
@@ -229,7 +232,7 @@ body {
   background-size: contain;
   height: 70vh;
   width: 100vw;
-  background-color: #9b7d5e;
+  background-color: #9b7c5e;
 }
 .trend{
   
@@ -270,13 +273,87 @@ body {
 /*          Footer                    */
 /* ********************************** */
 footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  padding: 20px 50px;
+  height: 20vh;
+  color: white;
+  background: #5b3c1f;
+}
+.social{
+  padding: 1rem;
+}
+.social-icon{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
-  color: white;
+  
+
+}
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
 }
 
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("IMG/wave.png");
+  background-size: 1000px 100px;
+
+  z-index: 25;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 8s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
 /* ********************************** */
 /*          MediaQuerys               */
 /* ********************************** */
