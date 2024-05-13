@@ -22,7 +22,7 @@ body {
 }
 main{
   flex: 1;
-  margin-bottom: 111px;
+  
 }
 .header {
   margin: 0;
@@ -226,6 +226,11 @@ main{
   
 }
 
+.info{
+  display: flex;
+  justify-content: end;
+}
+
 /* ********************************** */
 /*          Footer                    */
 /* ********************************** */
@@ -246,6 +251,12 @@ footer {
   height: 20vh;
   color: white;
   background: #5b3c1f;
+}
+
+.tetera{
+position: absolute;
+transform: translateY(-500px); 
+  
 }
 .social{
   padding: 1rem;
