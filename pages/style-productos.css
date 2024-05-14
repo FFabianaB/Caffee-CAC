@@ -7,7 +7,7 @@
   --color-fondo: #000000;
 }
 html {
-  cursor: url("/IMG/cursor.png"), auto;
+  cursor: url("../IMG/cursor.png"), auto;
   font-size: 80%;
 }
 body {
@@ -193,22 +193,22 @@ body {
   font-size: 1.5rem;
 }
 .bg-carousel-ba1 {
-  background-image: url(/IMG/ba1-min.jpg);
+  background-image: url(../IMG/ba1-min.jpg);
 }
 .bg-carousel-ba2 {
-  background-image: url(/IMG/ba2-min.jpg);
+  background-image: url(../IMG/ba2-min.jpg);
 }
 .bg-carousel-ba3 {
-  background-image: url(/IMG/ba3-min.jpg);
+  background-image: url(../IMG/ba3-min.jpg);
 }
 .bg-carousel-ba4 {
-  background-image: url(/IMG/ba4-min.jpg);
+  background-image: url(../IMG/ba4-min.jpg);
 }
 .bg-carousel-ba5 {
-  background-image: url(/IMG/ba5-min.jpg);
+  background-image: url(../IMG/ba5-min.jpg);
 }
 .bg-carousel-ba6 {
-  background-image: url(/IMG/ba6-min.jpg);  
+  background-image: url(../IMG/ba6-min.jpg);  
 }
 
 .carousel-item {
