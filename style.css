@@ -18,11 +18,9 @@ body {
   background-color: var(--color-fondo);
 
   width: 100vw;
-  
 }
-main{
+main {
   flex: 1;
-  
 }
 .header {
   margin: 0;
@@ -64,10 +62,10 @@ main{
   font-weight: 700;
   font-size: 2rem;
 }
-.anclaLogo:hover{
+.anclaLogo:hover {
   color: brown;
 }
-            
+
 .listaNav {
   list-style: none;
   display: flex;
@@ -186,23 +184,23 @@ main{
   width: 100vw;
   background-color: #9b7c5e;
 }
-.trend{
-  
-  display:flex;
+.trend {
+  display: flex;
   justify-content: center;
 }
 .card {
   background-color: #f1f1f1e4;
   width: 20vw;
-  display:flex;
+  display: flex;
   text-align: center;
 }
-.card:hover{
+.card:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.857);  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.857);
 }
 .card img {
-  height: 46vh;}
+  height: 46vh;
+}
 
 .title {
   text-align: center;
@@ -215,7 +213,7 @@ main{
   height: 10vh;
   width: 6vw;
   position: fixed;
-  z-index: 10;
+
   right: 2vh;
 
   bottom: 7vh;
@@ -223,10 +221,9 @@ main{
 
   font-size: 4rem;
   z-index: 1001;
-  
 }
 
-.info{
+.info {
   display: flex;
   justify-content: end;
 }
@@ -241,11 +238,10 @@ footer {
   margin-top: auto;
 
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 
   padding: 20px 50px;
   height: 20vh;
@@ -253,20 +249,17 @@ footer {
   background: #5b3c1f;
 }
 
-.tetera{
-position: absolute;
-transform: translateY(-500px); 
-  
+.tetera {
+  position: absolute;
+  transform: translateY(-500px);
 }
-.social{
+.social {
   padding: 1rem;
 }
-.social-icon{
+.social-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-
 }
 .social-icon__link {
   font-size: 2rem;
@@ -342,9 +335,34 @@ transform: translateY(-500px);
   .listaItem .linkNav a {
     font-size: 1rem;
   }
+  .tetera {
+    position: absolute;
+    height: 65%;
+    width: 55%;
+    transform: translateY(-375px);
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+
+    color: #f1f1f1;
+    height: 1%;
+
+    padding: 5%;
+  }
+
+  .card {
+    height: 100%;
+    width: 60%;
+    transform: translateX(90px);
+  }
+  .card:hover {
+    transform: translateX(90px) scale(1.1);
+  }
 }
 
 @media (max-width: 576px) {
+
   .navegacion {
     margin-bottom: 50px;
   }
@@ -354,26 +372,34 @@ transform: translateY(-500px);
   .listaItem .linkNav {
     font-size: 0.7rem;
   }
-  .trend{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-   
+  .trend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-90px);
   }
   .card {
-    
     width: 80vw;
-    
   }
 
-  .up a,.up a  {
-    height: 10vh;
-    width: 6vw;
+  .fa-circle-chevron-up {
+    color: #1c0c04;
+
     position: fixed;
-    z-index: 10;
-    right: 5vh;
-  
-    bottom: 7vh;
+    
+    z-index: 1001;
+    transform: translateX(-200px) translateY(-100px);
+  }
+  .tetera {
+    position: absolute;
+    height: 70%;
+    width: 85%;
+  }
+  .info {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
   }
 }
