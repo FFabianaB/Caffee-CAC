@@ -16,11 +16,12 @@ html {
 }
 body {
   background-color: var(--color-fondo);
-
+  margin: 0; 
   width: 100vw;
 }
 main {
   flex: 1;
+  margin: 0;
 }
 .header {
   margin: 0;
@@ -368,9 +369,15 @@ footer {
 }
 
 @media (max-width: 576px) {
-
+  .banner{
+    width: fit-content;
+    overflow-x: hidden;
+  }
+  
   .navegacion {
     margin-bottom: 50px;
+    margin-left: 22px;
+    margin-right: 22px;
   }
   .anclaLogo {
     font-size: 2rem;
@@ -407,11 +414,12 @@ footer {
     margin-bottom: 150px;
 
     transform: translateX(50px);
+   
   }
   
   footer {
     
-    height: 90px;
+    
     width: 100%;
     padding: 40px;
   
