@@ -222,10 +222,21 @@ main {
   font-size: 4rem;
   z-index: 1001;
 }
-
-.info {
+.new{
+  display: inline;
+  width: 10wh;
   display: flex;
-  justify-content: end;
+  
+  justify-content: center;
+  background-color: chartreuse;
+}
+.new div{
+
+  text-align: center;
+  width: 40%;
+  background-color: #7758316b;
+  border-radius: 2% ;
+  margin-bottom: 100px;
 }
 
 /* ********************************** */
@@ -252,7 +263,7 @@ footer {
 .tetera {
   position: absolute;
   transform: translateY(-500px);
-  
+  pointer-events: none;
 }
 .social {
   padding: 1rem;
