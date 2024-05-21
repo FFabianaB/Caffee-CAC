@@ -20,7 +20,9 @@ body {
   width: 100vw;
 }
 main {
+  
   flex: 1;
+  margin-bottom: 20rem;
 }
 .header {
   margin: 0;
@@ -177,6 +179,9 @@ main {
 /* ********************************** */
 /*              CARDS                 */
 /* ********************************** */
+#tendencias {
+  margin-top: 5rem;
+}
 .cards {
   background-image: url(../IMG/granos\ png.png);
   background-size: contain;
@@ -238,7 +243,6 @@ main {
   border-radius: 2% ;
   margin-bottom: 100px;
 }
-
 /* ********************************** */
 /*          Footer                    */
 /* ********************************** */
@@ -411,14 +415,7 @@ footer {
     height: 60%;
     width: 65%;
   }
-  .info {
-    justify-content: center;
-    height: 70vh;
-    width: 70vw;
-    margin-bottom: 150px;
-
-    transform: translateX(50px);
-  }
+  
   
   footer {
     

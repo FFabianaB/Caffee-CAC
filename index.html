@@ -1,344 +1,259 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>4COFFE</title>
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    >
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    >
-    <!-- Icon -->
-    <link rel="icon" href="IMG/favicon.ico" type="image/x-icon" >
-    <!-- normalize CSS -->
-    <link rel="stylesheet" href="pages/reset.css" >
-    <!-- style CSS -->
-    <link rel="stylesheet" href="pages/style.css" >
-    <!-- Google fonts -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    >
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
-    >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comforter+Brush&display=swap"
-      rel="stylesheet"
-    >
-    <!-- FontAwesome -->
-    <script
-      src="https://kit.fontawesome.com/06cd062310.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header class="header">
-      <nav class="navegacion">
-        <a class="anclaLogo" href="#" id="logo">
-          <i class="fa-solid fa-mug-saucer"></i>
-          <span>4Coffee</span>
-        </a>
-        <ul class="listaNav">
-          <li class="listaItem">
-            <a class="linkNav" href="index.html">INICIO</a>
-          </li>
-          <li class="listaItem">
-            <a class="linkNav" href="pages/productos.html">PRODUCTOS</a>
-          </li>
-          <li class="listaItem">
-            <a class="linkNav" href="pages/locales.html">LOCALES</a>
-          </li>
-          <li class="listaItem">
-            <a class="linkNav" href="pages/contacto.html">CONTACTO</a>
-          </li>
-         
-          <li class="listaItem">
-            <div class="dropdown">
-              <button
-                class="btn btn-secondary"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa-solid fa-bars"></i>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Inicio</a></li>
-                <li><a class="dropdown-item" href="pages/productos.html">Productos</a></li>
-                <li><a class="dropdown-item" href="pages/locales.html">Locales</a></li>
-                <li><hr class="dropdown-divider" ></li>
-                <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
-                               
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <section class="banner">
-        <div class="content-banner">
-          <p>El mejor Café</p>
-          <h2>100% Artesanal <br >Café Natural</h2>
-        </div>
-      </section>
-      <div id="myCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active bg-carousel-ba1">
-            <svg class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"><rect width="100%" height="100%" fill="#000"></rect></svg>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4COFFE</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Icon -->
+  <link rel="icon" href="IMG/favicon.ico" type="image/x-icon">
+  <!-- normalize CSS -->
+  <link rel="stylesheet" href="pages/reset.css">
+  <!-- style CSS -->
+  <link rel="stylesheet" href="pages/style.css">
+  <!-- Google fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comforter+Brush&display=swap"
+    rel="stylesheet">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/06cd062310.js" crossorigin="anonymous"></script>
+</head>
 
-            <div class="container">
-              <div class="carousel-caption text-end pb-5">
-                <div class="row">
-                  <div class="col-lg-6 offset-lg-6">
-                    <h3>La mejor calidad</h3>
-                    <p>
-                      "Despierta tus sentidos con nuestro café recién tostado.
-                      Experimenta el aroma tentador y el sabor profundo que te
-                      llevarán en un viaje sensorial todas las mañanas.
-                      ¡Descubre tu nueva pasión por el café con nosotros!"
-                    </p>
+<body>
+  <header class="header">
+    <nav class="navegacion">
+      <a class="anclaLogo" href="#" id="logo">
+        <i class="fa-solid fa-mug-saucer"></i>
+        <span>4Coffee</span>
+      </a>
+      <ul class="listaNav">
+        <li class="listaItem">
+          <a class="linkNav" href="index.html">INICIO</a>
+        </li>
+        <li class="listaItem">
+          <a class="linkNav" href="pages/productos.html">PRODUCTOS</a>
+        </li>
+        <li class="listaItem">
+          <a class="linkNav" href="pages/locales.html">LOCALES</a>
+        </li>
+        <li class="listaItem">
+          <a class="linkNav" href="pages/contacto.html">CONTACTO</a>
+        </li>
 
-                    <a class="btn btn-outline-light mb-3" href="productos.html"
-                      >Ver más</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+        <li class="listaItem">
+          <div class="dropdown">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Inicio</a></li>
+              <li><a class="dropdown-item" href="pages/productos.html">Productos</a></li>
+              <li><a class="dropdown-item" href="pages/locales.html">Locales</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
+
+            </ul>
           </div>
-          <div class="carousel-item bg-carousel-ba2">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#000" ></rect>
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-end pb-5">
-                <div class="row">
-                  <div class="col-lg-6 offset-lg-6">
-                    <h3>Café premium</h3>
-                    <p>
-                      "¿Necesitas un impulso de energía? Nuestro café premium es
-                      la solución perfecta. Con cada sorbo, sentirás cómo la
-                      cafeína revitaliza tu cuerpo y despierta tu mente. ¡Eleva
-                      tu día con el sabor inigualable de nuestro café!"
-                    </p>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-                    <a class="btn btn-outline-light mb-3" href="#tendencias"
-                      >Ver más</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item bg-carousel-ba3">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect width="100%" height="100%" fill="#000" ></rect>
-            </svg>
-            <div class="container">
-              <div class="carousel-caption text-end pb-5">
-                <div class="row">
-                  <div class="col-lg-6 offset-lg-6">
-                    <h3>La mejor selección</h3>
-                    <p>
-                      "Sumérgete en el placer indulgente de nuestro café
-                      gourmet. Cada taza es una experiencia exquisita, con
-                      sabores complejos y notas sutiles que deleitarán tu
-                      paladar. ¡Descubre el lujo de disfrutar cada momento con
-                      nuestro café de calidad superior!"
-                    </p>
-
-                    <a class="btn btn-outline-light mb-3" href="productos.html"
-                      >Ver más</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
+  <main>
+    <section class="banner">
+      <div class="content-banner">
+        <p>El mejor Café</p>
+        <h2>100% Artesanal <br>Café Natural</h2>
       </div>
+    </section>
+    <div id="myCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-carousel-ba1">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#000"></rect>
+          </svg>
 
-      <section class="cards" id="tendencias">
-        <h3 class="title">TENDENCIAS</h3>
-        <div class="container trend">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card">
-                <img
-                  src="IMG/producto 4 latte.png"
-                  class="card-img-top"
-                  alt="Latte"
-                >
-                <div class="card-body">
-                  <h5 class="card-title">Café Latte</h5>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="IMG/producto 2 cafe.png"
-                  class="card-img-top"
-                  alt="Capuchino"
-                >
-                <div class="card-body">
-                  <h5 class="card-title">Capuchino</h5>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-regular fa-star" style="color: #ffd43b"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img
-                  src="IMG/producto 3 mocha.png"
-                  class="card-img-top"
-                  alt="Moca"
-                >
-                <div class="card-body">
-                  <h5 class="card-title">Café Moca</h5>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+          <div class="container">
+            <div class="carousel-caption text-end pb-5">
+              <div class="row">
+                <div class="col-lg-6 offset-lg-6">
+                  <h3>La mejor calidad</h3>
+                  <p>
+                    "Despierta tus sentidos con nuestro café recién tostado.
+                    Experimenta el aroma tentador y el sabor profundo que te
+                    llevarán en un viaje sensorial todas las mañanas.
+                    ¡Descubre tu nueva pasión por el café con nosotros!"
+                  </p>
+
+                  <a class="btn btn-outline-light mb-3" href="productos.html">Ver más</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      
-      <section class="register">
-          
-      </section>
-    </main>
+        <div class="carousel-item bg-carousel-ba2">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#000"></rect>
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-end pb-5">
+              <div class="row">
+                <div class="col-lg-6 offset-lg-6">
+                  <h3>Café premium</h3>
+                  <p>
+                    "¿Necesitas un impulso de energía? Nuestro café premium es
+                    la solución perfecta. Con cada sorbo, sentirás cómo la
+                    cafeína revitaliza tu cuerpo y despierta tu mente. ¡Eleva
+                    tu día con el sabor inigualable de nuestro café!"
+                  </p>
 
-    <img class="tetera" src="IMG/brooo.png" alt="tetera" >
+                  <a class="btn btn-outline-light mb-3" href="#tendencias">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item bg-carousel-ba3">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#000"></rect>
+          </svg>
+          <div class="container">
+            <div class="carousel-caption text-end pb-5">
+              <div class="row">
+                <div class="col-lg-6 offset-lg-6">
+                  <h3>La mejor selección</h3>
+                  <p>
+                    "Sumérgete en el placer indulgente de nuestro café
+                    gourmet. Cada taza es una experiencia exquisita, con
+                    sabores complejos y notas sutiles que deleitarán tu
+                    paladar. ¡Descubre el lujo de disfrutar cada momento con
+                    nuestro café de calidad superior!"
+                  </p>
 
-    <footer>
-      <div class="waves">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
+                  <a class="btn btn-outline-light mb-3" href="productos.html">Ver más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="social">
-        <ul class="social-icon">
-          <li class="social-icon__item">
-            <a class="social-icon__link" href="">
-              <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
-            </a>
-          </li>
-          <li class="social-icon__item">
-            <a class="social-icon__link" href="">
-              <i class="fa-brands fa-x-twitter" style="color: #ffffff"></i>
-            </a>
-          </li>
-          <li class="social-icon__item">
-            <a class="social-icon__link" href="">
-              <i class="fa-brands fa-github" style="color: #ffffff"></i>
-            </a>
-          </li>
-          <li class="social-icon__item">
-            <a class="social-icon__link" href="">
-              <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <small>Copyright Grupo 4 | CAC 2024</small>
-    </footer>
-
-    <div class="up">
-      <a href="#logo"><i class="fa-solid fa-circle-chevron-up"></i></a>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+    <section class="cards" id="tendencias">
+      <h3 class="title">TENDENCIAS</h3>
+      <div class="container trend">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="IMG/producto 4 latte.png" class="card-img-top" alt="Latte">
+              <div class="card-body">
+                <h5 class="card-title">Café Latte</h5>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="IMG/producto 2 cafe.png" class="card-img-top" alt="Capuchino">
+              <div class="card-body">
+                <h5 class="card-title">Capuchino</h5>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+                <i class="fa-regular fa-star" style="color: #ffd43b"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="IMG/producto 3 mocha.png" class="card-img-top" alt="Moca">
+              <div class="card-body">
+                <h5 class="card-title">Café Moca</h5>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+
+  </main>
+
+  <img class="tetera" src="IMG/brooo.png" alt="tetera">
+
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+    </div>
+    <div class="social">
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="">
+            <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="">
+            <i class="fa-brands fa-x-twitter" style="color: #ffffff"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="">
+            <i class="fa-brands fa-github" style="color: #ffffff"></i>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="">
+            <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <small>Copyright Grupo 4 | CAC 2024</small>
+  </footer>
+
+  <div class="up">
+    <a href="#logo"><i class="fa-solid fa-circle-chevron-up"></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
