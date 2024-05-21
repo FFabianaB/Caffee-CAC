@@ -1,3 +1,8 @@
+main{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
 p{
     font-family: "Poppins", sans-serif;
     margin-top: 1.5em;
@@ -43,4 +48,9 @@ p{
     font-size: 1.2rem; /* Ajustar el tamaño del texto de los párrafos */
   }
   
-  
+  @media (max-width: 576px) {
+   main{
+    margin-left: 1rem;
+    margin-right: 1rem;
+   }
+  }
