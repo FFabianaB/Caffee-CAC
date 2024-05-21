@@ -1,0 +1,261 @@
+:root {
+  --color-texto: #000000;
+  --color-nav: linear-gradient(to right, #f4e2ce, #c7a17a);
+  --drop-down: #a98158;
+  --color-hover: rgba(207, 142, 45, 0.576);
+  --color-iniciarSesion: #9b7d5e;
+  --color-fondo: #000000;
+}
+html {
+  cursor: url("../IMG/cursor.png"), auto;
+  font-size: 80%;
+}
+body {
+  background-color: var(--color-fondo);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.header {
+  background-image: var(--color-nav);
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+/* Barra de desplazamiento vertical/horizontal */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo */
+}
+::-webkit-scrollbar-thumb {
+  background: #c7a17a;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a28263;
+}
+/* ********************************** */
+/*               NavBar               */
+/* ********************************** */
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 1.5rem 0;
+}
+.anclaLogo {
+  font-family: "Comforter Brush", cursive;
+  text-decoration: none;
+  color: var(--color-texto);
+  font-weight: 700;
+  font-size: 2rem;
+}
+.anclaLogo:hover {
+  animation-name: shake;
+  -webkit-animation-name: shake;
+  -moz-animation-name: shake;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  color: var(--color-texto);
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+    color: indigo;
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+    color: yellow;
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+    color: pink;
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+    color: blue;
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+    color: red;
+  }
+}
+.listaNav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.listaNav .listaItem {
+  margin-right: 20px;
+}
+.listaItem .linkNav {
+  text-decoration: none;
+  color: var(--color-texto);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.listaItem .linkNav:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: var(--color-hover);
+}
+.listaItem .linkNav.iniciarSesion {
+  background-color: var(--color-iniciarSesion);
+  color: var(--color-texto);
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+/* ********************************** */
+/*               DropDown               */
+/* ********************************** */
+.btn i {
+  color: black;
+}
+.dropdown-menu,
+.btn-secondary {
+  background-color: var(--drop-down);
+}
+.dropdown-item {
+  color: #000000;
+}
+.dropdown-item:hover {
+  background-color: rgb(152, 115, 72);
+}
+/* ********************************** */
+/*              banner               */
+/* ********************************** */
+.banner {
+  font-family: "Caveat", cursive;
+  display: block;
+  margin-top: 15rem;
+  margin-left: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.content-banner {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+.content-banner p {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.content-banner h2 {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+/* ********************************** */
+/*             Carrusel               */
+/* ********************************** */
+.container a {
+  margin-top: 6px;
+}
+.carousel {
+  font-size: 1.5rem;
+}
+.bg-carousel-ba1 {
+  background-image: url(../IMG/ba1-min.jpg);
+}
+.bg-carousel-ba2 {
+  background-image: url(../IMG/ba2-min.jpg);
+}
+.bg-carousel-ba3 {
+  background-image: url(../IMG/ba3-min.jpg);
+}
+.bg-carousel-ba4 {
+  background-image: url(../IMG/ba4-min.jpg);
+}
+.bg-carousel-ba5 {
+  background-image: url(../IMG/ba5-min.jpg);
+}
+.bg-carousel-ba6 {
+  background-image: url(../IMG/ba6-min.jpg);  
+}
+
+.carousel-item {
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item svg {
+  opacity: 0.5;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+.carousel-item {
+  height: 37rem;
+  min-height: 95vh;
+}
+/* ********************************** */
+/*          MediaQuerys               */
+/* ********************************** */
+
+@media (min-width: 768px) {
+  .dropdown {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .linkNav {
+    display: none;
+  }
+  .anclaLogo {
+    font-size: 2rem;
+  }
+  .listaItem .linkNav a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navegacion {
+    margin-bottom: 50px;
+  }
+  .anclaLogo {
+    font-size: 2rem;
+  }
+  .listaItem .linkNav {
+    font-size: 0.7rem;
+  }
+}
