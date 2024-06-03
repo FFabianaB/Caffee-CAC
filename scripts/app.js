@@ -20,3 +20,13 @@ window.addEventListener('scroll', function() {
 if (window.scrollY === 0) {
     document.querySelector('.up').classList.add('hidden');
 }
+
+//nav 
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav-placeholder').innerHTML = data;
+        });
+});
