@@ -331,6 +331,13 @@ footer {
     background-positon-x: 0px;
   }
 }
+
+
+
+.up.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 /* ********************************** */
 /*          MediaQuerys               */
 /* ********************************** */

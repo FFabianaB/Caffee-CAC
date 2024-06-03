@@ -142,6 +142,11 @@ footer {
   flex-wrap: nowrap;
 }
 
+.up.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 @media (max-width: 576px) {
   .titlee {
     font-size: 3rem;
