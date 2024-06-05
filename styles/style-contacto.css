@@ -4,8 +4,11 @@ html {
 }
 
 body {
-  background-image: linear-gradient(rgba(240, 237, 237, 0.5), rgba(240, 232, 232, 0.5)),
-    url('../IMG/ba1-min.jpg');
+  background-image: linear-gradient(
+      rgba(240, 237, 237, 0.5),
+      rgba(240, 232, 232, 0.5)
+    ),
+    url("../IMG/ba1-min.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
