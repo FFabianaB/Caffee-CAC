@@ -1,10 +1,13 @@
  // JavaScript para desplazarse suavemente hacia la parte superior de la página
- document.querySelector('.up a').addEventListener('click', function(event) {
-    event.preventDefault();
-    document.getElementById('logo').scrollIntoView({
-        behavior: 'smooth'
+ document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector('.up a').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('logo').scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
+
 
 // JavaScript para mostrar/ocultar el botón según la posición de desplazamiento
 window.addEventListener('scroll', function() {
@@ -20,4 +23,24 @@ window.addEventListener('scroll', function() {
 if (window.scrollY === 0) {
     document.querySelector('.up').classList.add('hidden');
 }
+
+ // JavaScript para desplazarse suavemente hacia la parte superior de la página
+ document.querySelector('.up a').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('logo').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+// ---------------------------------------------------------
+var corazon = document.getElementById('test');
+
+corazon.addEventListener("click", function() {
+    corazon.style.color = 'red';
+    console.log('Hola, mundo!');
+
+});
+
+
+
 

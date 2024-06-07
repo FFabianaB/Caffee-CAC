@@ -7,6 +7,7 @@
 
 }
 
+
 body{
   background-color: var(--color-fondo);
  }
@@ -62,7 +63,10 @@ p {
 }
 
 .fa-heart{
-  color:var(--heartcolor)
+  color: white;
+}
+.red{
+  color:red;
 }
 
 .ikon {
