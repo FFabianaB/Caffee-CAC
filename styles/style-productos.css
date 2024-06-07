@@ -1,82 +1,145 @@
+:root {
+  --color-fondo: #f4e2ce;
+  --cardcolor:#f4e2ce;
+  --btnlike:#5b3c1f;
+  --heartcolor: white;
+  --micontenedor:rgb(162, 100, 100);
 
-body {
+}
+
+body{
   background-color: var(--color-fondo);
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-}
+ }
 
-/* ********************************** */
-/*              banner               */
-/* ********************************** */
-.banner {
-  font-family: "Caveat", cursive;
-  display: block;
-  margin-top: 15rem;
-  margin-left: 5rem;
-  position: absolute;
-  top: 0;
-  left: 0;
+.micontenedor{
+  /* background-color: var(--micontenedor); */
+  display: flex;
+  
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.carta{
+  background-color: var(--cardcolor);
+  height: 20rem;
+  width: 25rem;
+
+  margin:10px;
+  border-bottom-right-radius: 0;
+  overflow: hidden;  
+  border-radius: 1.25rem;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.182);
+}
+.carta:hover{
+  
+  cursor: pointer;
+}
+.imagen{
+  position: relative;
+  inset: 0;
+  height: 70%;
+}
+.imagen img{
+  border-radius: 1.25rem;
   width: 100%;
-  z-index: 1;
+  height: 100%;
+  object-fit: cover;
 }
-.content-banner {
-  max-width: 90rem;
-  margin: 0 auto;
+.descripcion{
+
+  padding: 0.938rem 0.625rem;
 }
-.content-banner p {
-  color: #fff;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: 500;
-}
-.content-banner h2 {
-  color: #fff;
-  font-size: 3.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
-/* ********************************** */
-/*             Carrusel               */
-/* ********************************** */
-.container a {
-  margin-top: 6px;
-}
-.carousel {
-  font-size: 1.5rem;
-}
-.bg-carousel-ba1 {
-  background-image: url(../IMG/ba1-min.jpg);
-}
-.bg-carousel-ba2 {
-  background-image: url(../IMG/ba2-min.jpg);
-}
-.bg-carousel-ba3 {
-  background-image: url(../IMG/ba3-min.jpg);
-}
-.bg-carousel-ba4 {
-  background-image: url(../IMG/ba4-min.jpg);
-}
-.bg-carousel-ba5 {
-  background-image: url(../IMG/ba5-min.jpg);
-}
-.bg-carousel-ba6 {
-  background-image: url(../IMG/ba6-min.jpg);  
+h3 {
+  text-transform: capitalize;
+  font-size: clamp(1.5rem, 1.3909rem + 0.4364vw, 1.8rem);
 }
 
-.carousel-item {
-  background-size: cover;
-  background-position: center center;
+p {
+  margin: 0.625rem 0 1.25rem;
+  color: #565656;
 }
-.carousel-item svg {
-  opacity: 0.5;
+
+.fa-heart{
+  color:var(--heartcolor)
 }
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+
+.ikon {
+  position: absolute;
+  bottom: -0.375rem;
+  right: -0.375rem;
+  width: 6rem;
+  height: 6rem;
+  background: var(--cardcolor);
+  border-top-left-radius: 50%;
 }
-.carousel-item {
-  height: 37rem;
-  min-height: 95vh;
+
+.ikonBox:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.ikon::before { /* Hijo invisible al elemento original */
+  position: absolute;
+
+  content: ""; /* pseudoelemento vacío */
+  bottom: 0.375rem;
+  left: -1.25rem;
+  background: transparent;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  box-shadow: 0.313rem 0.313rem 0 0.313rem var(--cardcolor);
+  
+}
+
+.ikon::after {
+  position: absolute;
+
+  content: "";
+  top: -1.25rem;
+  right: 0.375rem;
+  background: transparent;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  box-shadow: 0.313rem 0.313rem 0 0.313rem var(--cardcolor);
+  
+}
+
+.ikon .ikonBox {
+  position: absolute;
+  inset: 0.625rem;
+  background: var(--btnlike);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.ikon .ikonBox span {
+  
+  font-size: 2.3rem;
+}
+
+footer{
+  
+  height:20vh ;
+  margin-top: 20vh;
+}
+
+
+
+@media (max-width: 576px) {
+  
+  .micontenedor{
+    
+    flex-direction: column;
+ 
+  }
+  footer{
+    padding: 1px;
+  }
 }
