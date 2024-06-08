@@ -5,6 +5,9 @@
   --color-hover: rgba(207, 142, 45, 0.576);
   --color-iniciarSesion: #9b7d5e;
   --color-fondo: #f4e2ce;
+
+  --btons: #5b3c1f;
+  --btonstext: #f4e2ce;
 }
 
 html {
@@ -21,7 +24,7 @@ body {
 }
 main {
   flex: 1;
-  margin-bottom: 20rem;
+  margin-bottom: 14rem;
 }
 .header {
   margin: 0;
@@ -64,6 +67,7 @@ main {
 /* ********************************** */
 /*             Carrusel               */
 /* ********************************** */
+
 .container a {
   margin-top: 6px;
 }
@@ -94,12 +98,15 @@ main {
   height: 37rem;
   min-height: 95vh;
 }
+
+
 /* ********************************** */
 /*              CARDS                 */
 /* ********************************** */
-#tendencias {
-  margin-top: 5rem;
+#tendencias{
+  height: 85vh;
 }
+
 .cards {
   background-image: url(../IMG/granos\ png.png);
   background-size: contain;
@@ -126,29 +133,39 @@ main {
 }
 
 .title {
+  color:white;
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 30px;
+  padding: 20px;
+  text-shadow: 2px 2px 5px rgba(25, 25, 25, 0.949);
 }
 
-
-.new {
-  display: inline;
-  width: 10vw;
+.botonTendencias{
   display: flex;
-
   justify-content: center;
-  background-color: chartreuse;
-}
-.new div {
-  text-align: center;
-  width: 40%;
-  background-color: #7758316b;
-  border-radius: 2%;
-  margin-bottom: 100px;
+  margin-top: 30px;
 }
 
+.btnn {
+  display: inline-block;
+ font-size: larger;
+  
+  border: 2px solid var(--btons);
+  color: var(--btonstext);
+  text-decoration: none;
+  font-weight: bold;
+  background: var(--btons);
+
+  
+  padding: 15px 40px;
+  border-radius: 50px;
+}
+.btnn:hover {
+  background: rgba(0, 0, 0, 0.194);
+
+  color: #f4e2ce;
+}
 
 /* ********************************** */
 /*          MediaQuerys               */
@@ -231,3 +248,6 @@ main {
 
   
 }
+
+
+

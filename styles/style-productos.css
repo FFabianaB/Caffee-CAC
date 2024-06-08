@@ -50,11 +50,21 @@ h3 {
   text-transform: capitalize;
   font-size: clamp(1.5rem, 1.3909rem + 0.4364vw, 1.8rem);
 }
-
 p {
   margin: 0.625rem 0 1.25rem;
   color: #565656;
 }
+.canastaGris{
+  position: absolute;
+  /* bottom: -0.375rem;
+  right: -0.375rem; */
+  width: 6rem;
+  height: 6rem;
+  background: var(--cardcolor);
+  border-top-left-radius: 50%;
+}
+
+
 
 .fa-heart {
   color: var(--heartcolor);
