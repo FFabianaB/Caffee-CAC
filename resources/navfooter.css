@@ -118,7 +118,7 @@ main {
 #basket:hover{
   cursor: pointer;
 
-  position: relative;
+  
   box-sizing: border-box;
   overflow: hidden;
 
@@ -276,6 +276,9 @@ footer {
   }
   .listaItem .linkNav a {
     font-size: 1rem;
+  }
+  footer{
+    margin-bottom:-130px;
   }
 }
 

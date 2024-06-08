@@ -205,7 +205,25 @@ main {
     width: 80vw;
   }
 }
+@media (max-width: 768px) {
+  .tetera {
+    transform: translateY(-400px);
+   
+    width: 60%;
+  }
+  #tendencias{
+    height: 200vh !important;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  main{
+    height: 300vh!important;
+  }
+}
 @media (max-width: 576px) {
   .navegacion {
     margin-bottom: 50px;
@@ -239,14 +257,23 @@ main {
     bottom: 17vh;
   }
   .tetera {
-    margin-top:130px;
+    margin-bottom:130px;
     width: 100vw;
   }
-  footer{
-    margin-top: 70vh;
-  }
-
   
+
+  #tendencias{
+    height: 200vh !important;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  main{
+    height: 350vh!important;
+  }
 }
 
 
