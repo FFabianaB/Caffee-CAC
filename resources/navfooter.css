@@ -2,7 +2,7 @@
   --color-texto: #000000;
   --color-nav: linear-gradient(to right, #f4e2ce, #c7a17a);
   --drop-down: #a98158;
-  --color-hover: rgba(207, 142, 45, 0.576);
+  --color-hover-btnNav: rgba(230, 191, 133, 0.576);
   --color-iniciarSesion: #9b7d5e;
   --color-fondo: #f4e2ce;
 }
@@ -89,18 +89,45 @@ main {
   font-size: 1.1rem;
   padding: 0.5rem 1rem;
   transition: transform 0.3s, box-shadow 0.3s;
+
+  padding: 10px 20px;
+  border-radius: 50px;
 }
 .listaItem .linkNav:hover {
   transform: scale(0.95);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  background-color: var(--color-hover);
+  
+  background-color: var(--color-hover-btnNav);
+
+  padding: 10px 20px;
+  border-radius: 50px;
 }
 .listaItem .linkNav.iniciarSesion {
   background-color: var(--color-iniciarSesion);
   color: var(--color-texto);
-  border-radius: 5px;
   transition: transform 0.3s, box-shadow 0.3s;
+
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+#basket{
+  font-size: 2.3rem;
+  padding: 5px 15px;
+}
+#basket:hover{
+  cursor: pointer;
+
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+  
+  border-radius: 50px;
+  background-color: var(--color-hover-btnNav);
+  
 }
 /* ********************************** */
 /*            DropDown               */

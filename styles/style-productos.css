@@ -1,55 +1,49 @@
 :root {
   --color-fondo: #f4e2ce;
-  --cardcolor:#f4e2ce;
-  --btnlike:#5b3c1f;
-  --heartcolor: white;
-  --micontenedor:rgb(162, 100, 100);
-
+  --cardcolor: #f4e2ce;
+  --btnlike: #5b3c1f;
+  --heartcolor: #f4e2ce;
+  --micontenedor: rgb(162, 100, 100);
 }
 
-
-body{
+body {
   background-color: var(--color-fondo);
- }
+}
 
-.micontenedor{
-  /* background-color: var(--micontenedor); */
+.micontenedor {
   display: flex;
-  
 
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.carta{
+.carta {
   background-color: var(--cardcolor);
   height: 20rem;
   width: 25rem;
 
-  margin:10px;
+  margin: 10px;
   border-bottom-right-radius: 0;
-  overflow: hidden;  
+  overflow: hidden;
   border-radius: 1.25rem;
-  
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.182);
 }
-.carta:hover{
-  
+.carta:hover {
   cursor: pointer;
 }
-.imagen{
+.imagen {
   position: relative;
   inset: 0;
   height: 70%;
 }
-.imagen img{
+.imagen img {
   border-radius: 1.25rem;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.descripcion{
-
+.descripcion {
   padding: 0.938rem 0.625rem;
 }
 h3 {
@@ -62,11 +56,11 @@ p {
   color: #565656;
 }
 
-.fa-heart{
-  color: white;
+.fa-heart {
+  color: var(--heartcolor);
 }
-.red{
-  color:rgb(250, 96, 145);
+.red {
+  color: rgb(250, 96, 145);
 }
 
 .ikon {
@@ -84,10 +78,11 @@ p {
   cursor: pointer;
 }
 
-.ikon::before { /* Hijo invisible al elemento original */
+.ikon::before {
+  /* Hijo invisible al elemento original */
   position: absolute;
 
-  content: ""; /* pseudoelemento vacío */
+  content: ''; /* pseudoelemento vacío */
   bottom: 0.375rem;
   left: -1.25rem;
   background: transparent;
@@ -95,13 +90,12 @@ p {
   height: 1.25rem;
   border-bottom-right-radius: 1.25rem;
   box-shadow: 0.313rem 0.313rem 0 0.313rem var(--cardcolor);
-  
 }
 
 .ikon::after {
   position: absolute;
 
-  content: "";
+  content: '';
   top: -1.25rem;
   right: 0.375rem;
   background: transparent;
@@ -109,7 +103,6 @@ p {
   height: 1.25rem;
   border-bottom-right-radius: 1.25rem;
   box-shadow: 0.313rem 0.313rem 0 0.313rem var(--cardcolor);
-  
 }
 
 .ikon .ikonBox {
@@ -124,26 +117,19 @@ p {
 }
 
 .ikon .ikonBox span {
-  
   font-size: 2.3rem;
 }
 
-footer{
-  
-  height:20vh ;
+footer {
+  height: 20vh;
   margin-top: 20vh;
 }
 
-
-
 @media (max-width: 576px) {
-  
-  .micontenedor{
-    
+  .micontenedor {
     flex-direction: column;
- 
   }
-  footer{
+  footer {
     padding: 1px;
   }
 }

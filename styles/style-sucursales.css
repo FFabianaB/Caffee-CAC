@@ -58,6 +58,9 @@ p {
   text-decoration: none;
   font-weight: bold;
   background: var(--btons);
+
+  padding: 10px 20px;
+  border-radius: 50px;
 }
 
 .btnn:hover {
