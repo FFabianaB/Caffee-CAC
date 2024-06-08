@@ -135,7 +135,7 @@ main {
 
 .new {
   display: inline;
-  width: 10wh;
+  width: 10vw;
   display: flex;
 
   justify-content: center;
@@ -222,7 +222,11 @@ main {
     bottom: 17vh;
   }
   .tetera {
-    display:none;
+    margin-top:110px;
+    width: 100vw;
+  }
+  footer{
+    margin-top: 70vh;
   }
 
   
