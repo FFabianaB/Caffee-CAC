@@ -193,8 +193,17 @@ main {
   .navegacion {
     margin-bottom: 50px;
   }
-  
-  
+  .banner {
+    margin-top: 120px;
+    
+    width: 80vw;
+  }
+  .content-banner h2{
+    font-size: 3rem;
+  }
+  .content-banner p{
+    font-size: 3rem;
+  }
   .trend {
     display: flex;
     flex-direction: column;
@@ -213,9 +222,7 @@ main {
     bottom: 17vh;
   }
   .tetera {
-    position: absolute;
-    height: 60%;
-    width: 65%;
+    display:none;
   }
 
   

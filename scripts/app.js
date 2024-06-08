@@ -43,8 +43,7 @@ iconos.forEach(function(icono) {
     icono.addEventListener("click", function() {
         // Seleccionar el corazón dentro del icono actual
         const corazon = icono.querySelector('.fa-heart');
-        
-            corazon.classList.toggle('red');
+        corazon.classList.toggle('red');
         
     });
 });
