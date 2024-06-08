@@ -63,22 +63,14 @@ p {
   
 }
 #canastaGrisIcono{
-  color: #efefef;
+  color: #f4e2ce;
   font-size: 1.7rem;
   background: var(--btnlike);
   border-radius: 50%;
   padding: 10px;
 }
-
-
-
-
-
 .fa-heart {
   color: var(--heartcolor);
-}
-.red {
-  color: rgb(250, 96, 145);
 }
 
 .ikon {
@@ -141,6 +133,10 @@ p {
 footer {
   height: 20vh;
   margin-top: 20vh;
+}
+
+.red {
+  color: rgb(250, 96, 145)!important;
 }
 
 @media (max-width: 916px) {

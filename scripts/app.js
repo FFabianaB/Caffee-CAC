@@ -47,3 +47,14 @@ iconos.forEach(function(icono) {
         
     });
 });
+
+const buyIcon = document.querySelectorAll('.iconbuy');
+buyIcon.forEach(function(like) {
+    //  En icono escucha click
+    like.addEventListener("click", function() {
+
+        // agrega y quita clase red en 
+        like.classList.toggle('red');
+
+    })
+ });
