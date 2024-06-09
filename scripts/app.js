@@ -53,9 +53,10 @@ const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
 const alertTriggers = document.querySelectorAll('.liveAlertBtn');
 
 
-// funcion que
+// funcion que crea un mensaje de alerta y lo muestra por 1 segundo
 appendAlert = (message, type) => {
   const wrapper = document.createElement('div');
+
   const alertId = 'alert-' + Date.now(); // ID único basado en el timestamp actual
   wrapper.setAttribute('id', alertId); // Asignar el ID único al wrapper
   wrapper.innerHTML = [
@@ -76,7 +77,7 @@ appendAlert = (message, type) => {
   }, 1000); // 1000 ms = 1 segundo
 };
 
-
+// funcion que relaciona cada boton con  Id('liveAlertPlaceholder'
 alertTriggers.forEach((alertTrigger) => {
   alertTrigger.addEventListener('click', () => {
     appendAlert('Item agregado al carrito!', 'success');
