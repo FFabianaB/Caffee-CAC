@@ -55,6 +55,38 @@ buyIcon.forEach(function(like) {
 
         // agrega y quita clase red en 
         like.classList.toggle('red');
-
+       
     })
  });
+
+
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  const alertId = 'alert-' + Date.now(); // ID único basado en el timestamp actual
+  wrapper.setAttribute('id', alertId); // Asignar el ID único al wrapper
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+
+  // Eliminar el cartel después de 1 segundo
+  setTimeout(() => {
+    const alertToRemove = document.getElementById(alertId);
+    if (alertToRemove) {
+      alertToRemove.remove();
+    }
+  }, 1000); // 1000 ms = 1 segundo
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Item agregado al carrito!', 'success')
+  })
+}

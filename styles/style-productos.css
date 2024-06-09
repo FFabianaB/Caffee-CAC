@@ -62,7 +62,7 @@ p {
 
   
 }
-#canastaGrisIcono{
+.iconbuy{
   color: #f4e2ce;
   font-size: 1.7rem;
   background: var(--btnlike);
@@ -136,7 +136,7 @@ footer {
 }
 
 .red {
-  color: rgb(250, 96, 145)!important;
+  color: rgb(246, 119, 80)!important;
 }
 
 @media (max-width: 916px) {
