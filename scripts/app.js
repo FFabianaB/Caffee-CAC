@@ -22,9 +22,8 @@ window.addEventListener('scroll', function () {
 if (window.scrollY === 0) {
   document.querySelector('.up').classList.add('hidden');
 }
-// -------------------like en productos-------------------
 
-// Seleccionar todos los iconos
+// ------------------------------------------------------------
 const iconos = document.querySelectorAll('.ikon');
 
 // Iterar sobre cada icono
@@ -37,85 +36,35 @@ iconos.forEach(function (icono) {
   });
 });
 
-const buyIcon = document.querySelectorAll('.iconbuy');
-buyIcon.forEach(function (like) {
-  //  En icono escucha click
-  like.addEventListener('click', function () {
-    // agrega y quita clase red en
-    like.classList.toggle('red');
-
-   
+document.querySelectorAll('.iconbuy').forEach(function (button) {
+  button.addEventListener('click', function () {
+    button.classList.toggle('red');
+    if (button.classList.contains('red')) {
+      showAlert(button, 'Item agregado al carrito!', 'success');
+    } else {
+      console.log("Acción revertida");
+    }
   });
 });
 
-// ------------------------------------------------------------
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
-const alertTriggers = document.querySelectorAll('.liveAlertBtn');
+function showAlert(button, message, type) {
+  // ID único basado en el timestamp actual
+  const alertId = 'alert-' + Date.now(); 
+  const alertHTML = `
+    <div id="${alertId}" class="alert alert-${type} alert-dismissible" role="alert" style="position: absolute; transform:translateX(-57px)translateY(-57px);">
+      ${message}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  `;
+  button.insertAdjacentHTML('afterend', alertHTML);
 
-
-// funcion que crea un mensaje de alerta y lo muestra por 1 segundo
-appendAlert = (message, type) => {
-  const wrapper = document.createElement('div');
-
-  const alertId = 'alert-' + Date.now(); // ID único basado en el timestamp actual
-  wrapper.setAttribute('id', alertId); // Asignar el ID único al wrapper
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}</div>`,
-    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-    '</div>',
-  ].join('');
-
-  alertPlaceholder.append(wrapper);
-
-  // Eliminar el cartel después de 1 segundo
+  // Eliminar la alerta después de 1 segundo
   setTimeout(() => {
-    const alertToRemove = document.getElementById(alertId);
-    if (alertToRemove) {
-      alertToRemove.remove();
+    const alertElement = document.getElementById(alertId);
+    if (alertElement) {
+      alertElement.remove();
     }
   }, 1000); // 1000 ms = 1 segundo
-};
-
-// funcion que relaciona cada boton con  Id('liveAlertPlaceholder'
-alertTriggers.forEach((alertTrigger) => {
-  alertTrigger.addEventListener('click', () => {
-    appendAlert('Item agregado al carrito!', 'success');
-  });
-});
+}
 
 
-
-
-// --------------------------------------------------------
-// const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
-// const appendAlert = (message, type) => {
-//   const wrapper = document.createElement('div')
-//   const alertId = 'alert-' + Date.now(); // ID único basado en el timestamp actual
-//   wrapper.setAttribute('id', alertId); // Asignar el ID único al wrapper
-//   wrapper.innerHTML = [
-//     `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-//     `   <div>${message}</div>`,
-//     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-//     '</div>'
-//   ].join('')
-
-//   alertPlaceholder.append(wrapper)
-
-//   // Eliminar el cartel después de 1 segundo
-//   setTimeout(() => {
-//     const alertToRemove = document.getElementById(alertId);
-//     if (alertToRemove) {
-//       alertToRemove.remove();
-//     }
-//   }, 1000); // 1000 ms = 1 segundo
-// };
-
-// -----------------------------------------------------------------
-
-// const alertTriggers = document.querySelectorAll('.liveAlertBtn');
-// alertTriggers.forEach(alertTrigger => {
-//   alertTrigger.addEventListener('click', () => {
-//     appendAlert('Item agregado al carrito!', 'success');
-//   });
-// });
