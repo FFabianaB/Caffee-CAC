@@ -141,13 +141,23 @@ footer {
   color: rgb(246, 119, 80)!important;
 }
 
+/* ********************************** */
+/*          MediaQuerys               */
+/* ********************************** */
+
+
 @media (max-width: 916px) {
   h3{
     font-size: 1.5rem;
   }
 }
+@media (max-width: 808px) {
+  .listaNav .listaItem {
+    margin-right: 0px;
+  }
+}
 @media (max-width: 777px) {
-
+  
   .micontenedor {
     flex-direction: column;
   }
@@ -155,7 +165,6 @@ footer {
     padding: 1px;
   }
 }
-
 @media (max-width: 576px) {
   .micontenedor {
     flex-direction: column;
