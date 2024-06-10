@@ -159,7 +159,7 @@ footer {
     flex-direction: column;
   }
   
-  #basket{
+  .basket{
     display: none;
   }
   .up{
