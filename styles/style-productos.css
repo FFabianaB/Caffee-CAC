@@ -12,10 +12,12 @@ body {
 
 .micontenedor {
   display: flex;
-
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100vw;
+  padding: 0rem 1rem 1rem;
 }
 .carta {
   background-color: var(--cardcolor);
