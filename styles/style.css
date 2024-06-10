@@ -167,6 +167,15 @@ main {
   color: #f4e2ce;
 }
 
+
+.tetera {
+  position: absolute;
+  transform: translateY(-500px);
+  pointer-events: none;
+  height: 75vh;
+  width: 35vw;
+  }
+
 /* ********************************** */
 /*          MediaQuerys               */
 /* ********************************** */

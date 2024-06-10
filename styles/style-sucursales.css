@@ -144,6 +144,10 @@ p {
   pointer-events: none;
 }
 
+.social {
+  padding: 0px!important ;
+}
+
 @media (max-width: 768px) {
   .titlee {
     font-size: 3rem;
