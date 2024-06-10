@@ -144,8 +144,15 @@ p {
   pointer-events: none;
 }
 
+
+
+ul{
+  padding: 0px!important ;
+
+}
 .social {
   padding: 0px!important ;
+
 }
 
 @media (max-width: 768px) {
