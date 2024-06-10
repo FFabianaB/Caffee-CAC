@@ -158,7 +158,12 @@ footer {
   .micontenedor {
     flex-direction: column;
   }
-  footer {
-    padding: 1px;
+  
+  #basket{
+    display: none;
+  }
+  .up{
+    transform:translateY(60px) translateX(1px);
+   
   }
 }

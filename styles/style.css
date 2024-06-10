@@ -1,7 +1,7 @@
 :root {
   --color-texto: #000000;
   --color-nav: linear-gradient(to right, #f4e2ce, #c7a17a);
-  --drop-down: #a98158;
+
   --color-hover: rgba(207, 142, 45, 0.576);
   --color-iniciarSesion: #9b7d5e;
   --color-fondo: #f4e2ce;
@@ -257,13 +257,13 @@ main {
     bottom: 17vh;
   }
   .tetera {
-    margin-bottom:130px;
+    transform: translateY(-390px);
     width: 100vw;
   }
   
 
   #tendencias{
-    height: 200vh !important;
+    height: 220vh !important;
 
     display: flex;
     flex-direction: column;
