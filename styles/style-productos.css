@@ -4,12 +4,70 @@
   --btnlike: #5b3c1f;
   --heartcolor: #f4e2ce;
   --micontenedor: rgb(162, 100, 100);
+  --navBuscar: linear-gradient(to right, #f4e2ce!important, #c7a17a!important)!important;
+  --color-nav: linear-gradient(to right, #f4e2ce, #c7a17a);
 }
 
 body {
   background-color: var(--color-fondo);
 }
+.navegacion {
+  padding: 1rem 0;
+}
 
+/* ***************************** */
+/*       NavBarBusqueda          */
+/* ***************************** */
+.listaNavBusqueda {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  }
+
+.listaItemBusqueda {
+margin-right: 20px;
+}
+
+.listaItemBusqueda .linkNavBusqueda {
+text-decoration: none;
+color: var(--color-texto);
+font-weight: 700;
+font-size: 1.1rem;
+padding: 0.5rem 1rem;
+transition: transform 0.3s, box-shadow 0.3s;
+
+padding: 10px 20px;
+border-radius: 50px;
+}
+
+.listaItemBusqueda .linkNavBusqueda:hover {
+transform: scale(0.95);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+background-color: var(--color-hover-btnNav);
+
+padding: 10px 20px;
+border-radius: 50px;
+}
+
+.listaItemBusqueda .linkNavBusqueda .iniciarSesion {
+background-color: var(--color-iniciarSesion);
+color: var(--color-texto);
+transition: transform 0.3s, box-shadow 0.3s;
+
+padding: 10px 20px;
+border-radius: 50px;
+}
+.navBusqueda{
+ font-size: small;
+ font-weight:bolder;
+}
+
+.navBusquedaBtn{
+  font-size: small;
+  padding: 5px 10px!important;
+}
 .micontenedor {
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +77,8 @@ body {
   width: 100vw;
   padding: 0rem 1rem 1rem;
 }
+
+/* ----------------------------------------------------- */
 .carta {
   background-color: var(--cardcolor);
   height: 20rem;
@@ -138,8 +198,42 @@ footer {
 }
 
 .red {
+  display: flex;
+  justify-content:center;
+  align-content: center;
   color: rgb(246, 119, 80)!important;
 }
+
+.navBusqueda{
+  display: flex;
+  justify-content: center;
+}
+.busqueda{
+  width: 70%;
+}
+.navbar{
+  margin-top: 5px;
+  border-radius: 50px;
+  
+}
+
+.bg-body-tertiary{background-color: rgba(226, 191, 149, 0.433)!important; }
+
+.me-2{
+  border-radius: 50px;
+}
+.btn{
+  border-radius: 50px;
+  border-color: #565656;
+}
+.btn:hover{
+  background-color: #5b3c1f;
+  border-color: #565656;
+}
+.btn:hover>*{
+  color: #ffffff;
+}
+
 
 /* ********************************** */
 /*          MediaQuerys               */
@@ -151,13 +245,22 @@ footer {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 808px) {
-  .listaNav .listaItem {
+@media (max-width: 873px) {
+  .listaItemBusqueda {
     margin-right: 0px;
   }
 }
+@media (max-width: 788px) {  /* --------------------------------------  */
+  .container-fluid{
+    justify-content: center!important;
+    
+    }
+    .navBusquedaBtn {
+      margin: 4px 0px;
+  }
+}
+
 @media (max-width: 777px) {
-  
   .micontenedor {
     flex-direction: column;
   }
@@ -165,16 +268,29 @@ footer {
     padding: 1px;
   }
 }
+@media (max-width: 480px) {
+.listaNavBusqueda{
+  padding: 15px;
+}
+}
 @media (max-width: 576px) {
+  .listaItemBusqueda {
+    margin-right: 0px;
+  }
   .micontenedor {
     flex-direction: column;
   }
-  
-  .basket{
+    /* .basket{
     display: none;
-  }
+  } */
   .up{
     transform:translateY(60px) translateX(1px);
    
   }
+}
+
+@media (max-width: 377px){
+.listaNav {
+  width:20%;
+}
 }

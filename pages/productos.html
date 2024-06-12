@@ -48,9 +48,9 @@
              
       </li>
 
-        <li class="listaItem">
+        <li class="listaItemBusqueda">
           <div class="dropdown">
-            <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary btnDropDown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="fa-solid fa-bars"></i>
             </button>
             <ul class="dropdown-menu">
@@ -65,12 +65,31 @@
       </ul>
     </nav>
   </header>
-
+  <div class="navBusqueda">
+    <div class="busqueda">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">Categorías:</a>
+          <ul class="listaNavBusqueda">
+            <li class="listaItemBusqueda"><a class="linkNavBusqueda navBusquedaBtn">Café</a></li>
+            <li class="listaItemBusqueda"><a class="linkNavBusqueda navBusquedaBtn">Postres</a></li>
+            <li class="listaItemBusqueda"><a class="linkNavBusqueda navBusquedaBtn">Desayunos</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
 
   <div class="micontenedor">
     <div class="carta">
       <div class="imagen">
         <img src="../IMG/ba1-min.jpg" alt="">
+        <span class="badge text-bg-light">Light</span>
+        <span class="badge text-bg-dark">Dark</span>
         <div class="ikon">
           <a class="ikonBox">
             <span class="material-symbols-outlined">

@@ -148,6 +148,9 @@ background-color: var(--color-hover-btnNav);
 /* ********************************** */
 /*            DropDown               */
 /* ********************************** */
+.btnDropDown{
+  border-radius: .25rem !important;
+}
 .btn i {
 color: black;
 }
