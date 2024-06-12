@@ -69,10 +69,12 @@ function showAlert(button, message, type) {
 
 // -------------------Categorias---------------------------------
 const btnCategorias = document.querySelectorAll('.navBusquedaBtn');
-const catCafe = document.getElementsByClassName('catCafe');
-const catPostres = document.getElementsByClassName('catPostres');
-const catDesayunos = document.getElementsByClassName('catDesayunos');
+const catCafe = document.getElementById('catCafe');
+const catPostres = document.getElementById('catPostres');
+const catDesayunos = document.getElementById('catDesayunos');
 const cards = document.querySelectorAll('.carta');
+
+
 
 btnCategorias.forEach(function (boton) {
   boton.addEventListener('click', function () {
@@ -81,7 +83,7 @@ btnCategorias.forEach(function (boton) {
 
     if (boton.classList.contains('seleccionado')) {
 
-      boton.classList.remove('seleccionado');
+      boton.classList.remove('seleccionado'); 
       cards.forEach(function (card) { card.classList.remove('estadoOculto');}); 
 
     }else{
@@ -90,13 +92,38 @@ btnCategorias.forEach(function (boton) {
       btn.classList.remove('seleccionado');});
 
       boton.classList.add('seleccionado');
-      cards.forEach(function (card) { card.classList.add('estadoOculto'); });     
+      cards.forEach(function (card) { card.classList.add('estadoOculto'); 
+        
+        if (catCafe.classList.contains('seleccionado')) {
+
+          cards.forEach(function (card) { 
+            if(card.classList.contains('cafe')){
+              card.classList.remove('estadoOculto')
+            } });  
+         
+        } else if (catPostres.classList.contains('seleccionado')) {
+          cards.forEach(function (card) { 
+            if(card.classList.contains('postre')){
+              card.classList.remove('estadoOculto')
+            } });  
+          
+        } else if (catDesayunos.classList.contains('seleccionado')) {
+          
+          cards.forEach(function (card) { 
+            if(card.classList.contains('desayuno')){
+              card.classList.remove('estadoOculto')
+            } });  
+
+        
+        };
+      });     
       
     }
     
   });
 
 });
+
 
 
 // if (cards.classList.contains('catCafe')) {
