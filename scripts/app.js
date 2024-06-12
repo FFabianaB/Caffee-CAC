@@ -123,21 +123,3 @@ btnCategorias.forEach(function (boton) {
   });
 
 });
-
-
-
-// if (cards.classList.contains('catCafe')) {
-//   cards.forEach(function (card) { card.classList.add('estadoOculto'); });
-//   if (card.classList.contains('catCafe')) {
-//     card.classList.remove('estadoOculto');
-//    }
-
-// } else if (boton.classList.contains('catPostres')) {
-//   cards.forEach(function (card) {
-//     card.classList.add('estadoOculto');
-//   });
-// } else if (boton.classList.contains('catDesayunos')) {
-//   cards.forEach(function (card) {
-//     card.classList.add('estadoOculto');
-//   });
-// };
