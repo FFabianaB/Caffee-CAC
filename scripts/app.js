@@ -67,4 +67,19 @@ function showAlert(button, message, type) {
   }, 1000); // 1000 ms = 1 segundo
 }
 
+// ----------------------------------------------------
+const btnCategorias = document.querySelectorAll('.navBusquedaBtn');
+
+
+btnCategorias.forEach(function (boton) {
+  boton.addEventListener('click', function () {
+    // Elimina la clase 'seleccionado' de todos los botones
+    btnCategorias.forEach(function (btn) {
+      btn.classList.remove('seleccionado');
+    });
+
+    // Añade la clase 'seleccionado' solo al botón clicado
+    boton.classList.add('seleccionado');
+  });
+});
 
