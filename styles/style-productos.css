@@ -241,7 +241,9 @@ footer {
   color: #ffffff;
 }
 
-
+.estadoOculto{
+  display: none;
+}
 /* ********************************** */
 /*          MediaQuerys               */
 /* ********************************** */

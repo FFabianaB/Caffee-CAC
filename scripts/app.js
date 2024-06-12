@@ -1,4 +1,4 @@
-// Up Botón
+//-------------------- Up Botón---------------------------
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.up a').addEventListener('click', function (event) {
     event.preventDefault();
@@ -23,7 +23,7 @@ if (window.scrollY === 0) {
   document.querySelector('.up').classList.add('hidden');
 }
 
-// ------------------------------------------------------------
+// ----------------------Boton comprar y alerta---------------------------
 const iconos = document.querySelectorAll('.ikon');
 
 // Iterar sobre cada icono
@@ -67,19 +67,50 @@ function showAlert(button, message, type) {
   }, 1000); // 1000 ms = 1 segundo
 }
 
-// ----------------------------------------------------
+// -------------------Categorias---------------------------------
 const btnCategorias = document.querySelectorAll('.navBusquedaBtn');
-
+const catCafe = document.getElementsByClassName('catCafe');
+const catPostres = document.getElementsByClassName('catPostres');
+const catDesayunos = document.getElementsByClassName('catDesayunos');
+const cards = document.querySelectorAll('.carta');
 
 btnCategorias.forEach(function (boton) {
   boton.addEventListener('click', function () {
-    // Elimina la clase 'seleccionado' de todos los botones
-    btnCategorias.forEach(function (btn) {
-      btn.classList.remove('seleccionado');
-    });
+    // Cuando clikeo un boton: SI contiene la clase SELECCIONADO la toggle
+    // SINO agrega la clase SELECCIONADO y la elimina de los demás botones    
 
-    // Añade la clase 'seleccionado' solo al botón clicado
-    boton.classList.add('seleccionado');
+    if (boton.classList.contains('seleccionado')) {
+
+      boton.classList.remove('seleccionado');
+      cards.forEach(function (card) { card.classList.remove('estadoOculto');}); 
+
+    }else{
+      
+      btnCategorias.forEach(function (btn) {
+      btn.classList.remove('seleccionado');});
+
+      boton.classList.add('seleccionado');
+      cards.forEach(function (card) { card.classList.add('estadoOculto'); });     
+      
+    }
+    
   });
+
 });
 
+
+// if (cards.classList.contains('catCafe')) {
+//   cards.forEach(function (card) { card.classList.add('estadoOculto'); });
+//   if (card.classList.contains('catCafe')) {
+//     card.classList.remove('estadoOculto');
+//    }
+
+// } else if (boton.classList.contains('catPostres')) {
+//   cards.forEach(function (card) {
+//     card.classList.add('estadoOculto');
+//   });
+// } else if (boton.classList.contains('catDesayunos')) {
+//   cards.forEach(function (card) {
+//     card.classList.add('estadoOculto');
+//   });
+// };
