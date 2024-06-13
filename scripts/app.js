@@ -78,10 +78,7 @@ const cards = document.querySelectorAll('.carta');
 
 btnCategorias.forEach(function (boton) {
   boton.addEventListener('click', function () {
-    // Cuando clikeo un boton: SI contiene la clase SELECCIONADO la toggle
-    // SINO agrega la clase SELECCIONADO y la elimina de los demás botones    
-
-    if (boton.classList.contains('seleccionado')) {
+     if (boton.classList.contains('seleccionado')) {
 
       boton.classList.remove('seleccionado'); 
       cards.forEach(function (card) { card.classList.remove('estadoOculto');}); 

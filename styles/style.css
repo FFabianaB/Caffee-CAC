@@ -11,6 +11,7 @@
 }
 
 html {
+
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -18,6 +19,7 @@ html {
   font-size: 80%;
 }
 body {
+  
   background-color: var(--color-fondo);
 
   width: 100vw;
@@ -170,17 +172,21 @@ main {
 
 .tetera {
   position: absolute;
-  transform: translateY(-500px);
+  transform: translateY(-450px);
   pointer-events: none;
   height: 75vh;
   width: 35vw;
   }
 
+.up{
+  
+  transform: translateX(-90px);
+  
+}
+
 /* ********************************** */
 /*          MediaQuerys               */
 /* ********************************** */
-
-
 
 @media (max-width: 768px) {
   
@@ -199,29 +205,29 @@ main {
 
     padding: 5%;
   }
-
   .card {
-    height: 100%;
+    
+    
     width: 60%;
     transform: translateX(90px);
   }
-  .card:hover {
-    transform: translateX(90px) scale(1.1);
-  }
+  
+
   .info {
     justify-content: center;
     height: 80vh;
     width: 80vw;
   }
-}
-@media (max-width: 768px) {
+  .card:hover {
+    transform: translateX(90px) scale(1.1);
+  }
   .tetera {
     transform: translateY(-400px);
    
     width: 60%;
   }
   #tendencias{
-    height: 200vh !important;
+    height: 220vh !important;
 
     display: flex;
     flex-direction: column;
@@ -230,7 +236,7 @@ main {
     
   }
   main{
-    height: 300vh!important;
+    height: 330vh!important;
   }
 }
 @media (max-width: 576px) {
@@ -253,10 +259,10 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transform: translateX(-90px);
+    
   }
   .card {
-    width: 80vw;
+    width: 60%;
   }
 
   .fa-circle-chevron-up {
@@ -284,6 +290,11 @@ main {
     height: 350vh!important;
   }
 }
-
+@media (max-width: 380px) {
+  .card {
+    width: 90%;
+   transform: translateX(-1px); 
+  }
+}
 
 
