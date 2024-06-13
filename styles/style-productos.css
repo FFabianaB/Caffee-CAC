@@ -289,9 +289,7 @@ footer {
   .micontenedor {
     flex-direction: column;
   }
-    /* .basket{
-    display: none;
-  } */
+   
   .up{
     transform:translateY(60px) translateX(1px);
    
@@ -299,7 +297,12 @@ footer {
 }
 
 @media (max-width: 377px){
-.listaNav {
-  width:20%;
-}
+  .listaNav {
+    margin-bottom: 1rem;
+    align-items: center;
+   
+  }
+  .listaNav .listaItem {
+    margin-right: 0px;
+  }
 }
