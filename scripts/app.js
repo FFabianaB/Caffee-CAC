@@ -23,8 +23,24 @@ if (window.scrollY === 0) {
   document.querySelector('.up').classList.add('hidden');
 }
 
+ // ------------------------Notificación Badge--------------------------
+ const contadorB = document.getElementById('contadorBadge');
+ let contador = 0;
+ 
+ function notificarCompras() {
+   contadorB.textContent = contador;
+   if (contador == 0) {
+    contadorB.style.display = 'none';
+  } else {
+    contadorB.style.display = 'block';
+  }
+ }
+ 
+
 // ----------------------Boton comprar y alerta---------------------------
 const iconos = document.querySelectorAll('.ikon');
+
+
 
 // Iterar sobre cada icono
 iconos.forEach(function (icono) {
@@ -41,8 +57,16 @@ document.querySelectorAll('.iconbuy').forEach(function (button) {
     button.classList.toggle('red');
     if (button.classList.contains('red')) {
       showAlert(button, 'Item agregado al carrito!', 'success');
+
+      contador++;
+      console.log(contador);
+      notificarCompras()
     } else {
-      console.log("Acción revertida");
+      
+
+      contador--;
+      console.log(contador);
+      notificarCompras()
     }
   });
 });
@@ -120,3 +144,5 @@ btnCategorias.forEach(function (boton) {
   });
 
 });
+
+
