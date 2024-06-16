@@ -96,51 +96,49 @@ const catPostres = document.getElementById('catPostres');
 const catDesayunos = document.getElementById('catDesayunos');
 const cards = document.querySelectorAll('.carta');
 
+btnCategorias.forEach(function (boton) {
+  boton.addEventListener('click', function () {
+     if (boton.classList.contains('seleccionado')) {
 
+      boton.classList.remove('seleccionado'); 
+      cards.forEach(function (card) { card.classList.remove('estadoOculto');}); 
 
-// btnCategorias.forEach(function (boton) {
-//   boton.addEventListener('click', function () {
-//      if (boton.classList.contains('seleccionado')) {
-
-//       boton.classList.remove('seleccionado'); 
-//       cards.forEach(function (card) { card.classList.remove('estadoOculto');}); 
-
-//     }else{
+    }else{
       
-//       btnCategorias.forEach(function (btn) {
-//       btn.classList.remove('seleccionado');});
+      btnCategorias.forEach(function (btn) {
+      btn.classList.remove('seleccionado');});
 
-//       boton.classList.add('seleccionado');
-//       cards.forEach(function (card) { card.classList.add('estadoOculto'); 
+      boton.classList.add('seleccionado');
+      cards.forEach(function (card) { card.classList.add('estadoOculto'); 
         
-//         if (catCafe.classList.contains('seleccionado')) {
+        if (catCafe.classList.contains('seleccionado')) {
 
-//           cards.forEach(function (card) { 
-//             if(card.classList.contains('cafe')){
-//               card.classList.remove('estadoOculto')
-//             } });  
+          cards.forEach(function (card) { 
+            if(card.classList.contains('cafe')){
+              card.classList.remove('estadoOculto')
+            } });  
          
-//         } else if (catPostres.classList.contains('seleccionado')) {
-//           cards.forEach(function (card) { 
-//             if(card.classList.contains('postre')){
-//               card.classList.remove('estadoOculto')
-//             } });  
+        } else if (catPostres.classList.contains('seleccionado')) {
+          cards.forEach(function (card) { 
+            if(card.classList.contains('postre')){
+              card.classList.remove('estadoOculto')
+            } });  
           
-//         } else if (catDesayunos.classList.contains('seleccionado')) {
+        } else if (catDesayunos.classList.contains('seleccionado')) {
           
-//           cards.forEach(function (card) { 
-//             if(card.classList.contains('desayuno')){
-//               card.classList.remove('estadoOculto')
-//             } });  
+          cards.forEach(function (card) { 
+            if(card.classList.contains('desayuno')){
+              card.classList.remove('estadoOculto')
+            } });  
 
         
-//         };
-//       });     
+        };
+      });     
       
-//     }
+    }
     
-//   });
+  });
 
-// });
+});
 
 

@@ -91,47 +91,47 @@
 
             const admincat= document.querySelectorAll(".adminOption"); 
 
-            admincat.forEach(function (boton) {
-              boton.addEventListener('click', function () {
-                 if (boton.classList.contains('seleccion')) { 
-                  boton.classList.remove('seleccion'); 
-                  cards.forEach(function (card) { card.classList.remove('estadoOculto');}); 
-                }else{
+            // admincat.forEach(function (boton) {
+            //   boton.addEventListener('click', function () {
+            //      if (boton.classList.contains('seleccion')) { 
+            //       boton.classList.remove('seleccion'); 
+            //       cards.forEach(function (card) { card.classList.remove('estadoOculto');}); 
+            //     }else{
                   
-                  admincat.forEach(function (btn) {
-                  btn.classList.remove('seleccion');});
+            //       admincat.forEach(function (btn) {
+            //       btn.classList.remove('seleccion');});
                   
-                  boton.classList.add('seleccion');
-                  cards.forEach(function (card) { card.classList.add('estadoOculto'); 
+            //       boton.classList.add('seleccion');
+            //       cards.forEach(function (card) { card.classList.add('estadoOculto'); 
                     
-                    if (catCafe.classList.contains('seleccion')) {
+            //         if (catCafe.classList.contains('seleccion')) {
                       
-                      cards.forEach(function (card) { 
-                        if(card.classList.contains('cafe')){
-                          card.classList.remove('estadoOculto')
-                        } });  
+            //           cards.forEach(function (card) { 
+            //             if(card.classList.contains('cafe')){
+            //               card.classList.remove('estadoOculto')
+            //             } });  
                      
-                    } else if (catPostres.classList.contains('seleccion')) {
-                      cards.forEach(function (card) { 
-                        if(card.classList.contains('postre')){
-                          card.classList.remove('estadoOculto')
-                        } });  
+            //         } else if (catPostres.classList.contains('seleccion')) {
+            //           cards.forEach(function (card) { 
+            //             if(card.classList.contains('postre')){
+            //               card.classList.remove('estadoOculto')
+            //             } });  
                       
-                    } else if (catDesayunos.classList.contains('seleccion')) {
+            //         } else if (catDesayunos.classList.contains('seleccion')) {
                       
-                      cards.forEach(function (card) { 
-                        if(card.classList.contains('desayuno')){
-                          card.classList.remove('estadoOculto')
-                        } });  
+            //           cards.forEach(function (card) { 
+            //             if(card.classList.contains('desayuno')){
+            //               card.classList.remove('estadoOculto')
+            //             } });  
                       
-                    };
-                  });     
+            //         };
+            //       });     
                   
-                }
+            //     }
                 
-              }); 
+            //   }); 
               
-            });
+            // });
           
           
           
