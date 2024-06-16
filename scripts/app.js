@@ -23,7 +23,7 @@ if (window.scrollY === 0) {
   document.querySelector('.up').classList.add('hidden');
 }
 
- // ------------------------Notificación Badge--------------------------
+ // ---------------------Contador de compras--------------------------
  const contadorB = document.getElementById('contadorBadge');
  let contador = 0;
  
@@ -39,8 +39,6 @@ if (window.scrollY === 0) {
 
 // ----------------------Boton comprar y alerta---------------------------
 const iconos = document.querySelectorAll('.ikon');
-
-
 
 // Iterar sobre cada icono
 iconos.forEach(function (icono) {
@@ -100,49 +98,49 @@ const cards = document.querySelectorAll('.carta');
 
 
 
-btnCategorias.forEach(function (boton) {
-  boton.addEventListener('click', function () {
-     if (boton.classList.contains('seleccionado')) {
+// btnCategorias.forEach(function (boton) {
+//   boton.addEventListener('click', function () {
+//      if (boton.classList.contains('seleccionado')) {
 
-      boton.classList.remove('seleccionado'); 
-      cards.forEach(function (card) { card.classList.remove('estadoOculto');}); 
+//       boton.classList.remove('seleccionado'); 
+//       cards.forEach(function (card) { card.classList.remove('estadoOculto');}); 
 
-    }else{
+//     }else{
       
-      btnCategorias.forEach(function (btn) {
-      btn.classList.remove('seleccionado');});
+//       btnCategorias.forEach(function (btn) {
+//       btn.classList.remove('seleccionado');});
 
-      boton.classList.add('seleccionado');
-      cards.forEach(function (card) { card.classList.add('estadoOculto'); 
+//       boton.classList.add('seleccionado');
+//       cards.forEach(function (card) { card.classList.add('estadoOculto'); 
         
-        if (catCafe.classList.contains('seleccionado')) {
+//         if (catCafe.classList.contains('seleccionado')) {
 
-          cards.forEach(function (card) { 
-            if(card.classList.contains('cafe')){
-              card.classList.remove('estadoOculto')
-            } });  
+//           cards.forEach(function (card) { 
+//             if(card.classList.contains('cafe')){
+//               card.classList.remove('estadoOculto')
+//             } });  
          
-        } else if (catPostres.classList.contains('seleccionado')) {
-          cards.forEach(function (card) { 
-            if(card.classList.contains('postre')){
-              card.classList.remove('estadoOculto')
-            } });  
+//         } else if (catPostres.classList.contains('seleccionado')) {
+//           cards.forEach(function (card) { 
+//             if(card.classList.contains('postre')){
+//               card.classList.remove('estadoOculto')
+//             } });  
           
-        } else if (catDesayunos.classList.contains('seleccionado')) {
+//         } else if (catDesayunos.classList.contains('seleccionado')) {
           
-          cards.forEach(function (card) { 
-            if(card.classList.contains('desayuno')){
-              card.classList.remove('estadoOculto')
-            } });  
+//           cards.forEach(function (card) { 
+//             if(card.classList.contains('desayuno')){
+//               card.classList.remove('estadoOculto')
+//             } });  
 
         
-        };
-      });     
+//         };
+//       });     
       
-    }
+//     }
     
-  });
+//   });
 
-});
+// });
 
 
