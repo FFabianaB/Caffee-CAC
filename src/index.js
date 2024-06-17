@@ -6,11 +6,11 @@ const app = express();
 app.use(express.static(path.join(__dirname, '../public')));
 
 // Importar las rutas relativas
-const indexRouter = require('./routes/index');
+const indexRoutes = require('./routes/index');
 const sectionsRouter = require('./routes/sections');
 
 // Usar las rutas
-app.use('/', indexRouter);
+app.use('/', indexRoutes);
 app.use('/sections', sectionsRouter);
 
 // Exportar la aplicación para Vercel
