@@ -1,6 +1,12 @@
-const controller = {};
-controller.index = (req,res)=>{
-    res.send('conexion desde index.controller');
-} 
+// src/controllers/homeController.js
 
-module.exports = controller
+// Controlador para la página de inicio
+function getIndexPage(req, res) {
+    // Lógica para renderizar o enviar datos
+    res.sendFile('index.html', { root: './public' });
+  }
+  
+  module.exports = {
+    getIndexPage,
+  };
+  

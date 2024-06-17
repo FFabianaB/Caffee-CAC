@@ -1,10 +1,18 @@
+// src/routes/index.js
+
 const express = require('express');
-const path = require('path');
-const routes = express.Router();
+const router = express.Router();
 
-// Ruta para la raíz
-routes.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../public/index.html'));
-});
+// Importar controladores
+const homeController = require('../controllers/homeController');
+const userController = require('../controllers/userController');
 
-module.exports = routes;
+// Definir rutas
+router.get('/', homeController.getIndexPage);
+router.get('/users', userController.getAllUsers);
+router.get('/users/:id', userController.getUserById);
+router.post('/users', userController.createUser);
+router.put('/users/:id', userController.updateUser);
+router.delete('/users/:id', userController.deleteUser);
+
+module.exports = router;

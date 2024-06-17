@@ -1,17 +1,19 @@
+// src/index.js
+
 const express = require('express');
 const path = require('path');
+
 const app = express();
 
-// Middleware para servir archivos estáticos en la carpeta 'public'
+// Configurar middleware para servir archivos estáticos desde la carpeta 'public'
 app.use(express.static(path.join(__dirname, '../public')));
 
-// Importar las rutas relativas
-const indexRoutes = require('./routes/index');
-const sectionsRouter = require('./routes/sections');
+// Importar y usar las rutas definidas en otro archivo
+const routes = require('./routes');
+app.use('/', routes);
 
-// Usar las rutas
-app.use('/', indexRoutes);
-app.use('/', sectionsRouter);
+const PORT = process.env.PORT || 3000;
 
-// Exportar la aplicación para Vercel
-module.exports = app;
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+});
