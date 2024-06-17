@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const router = express.Router();
+const router = express.Router(); // Use express.Router() to create a new router instance
 
 // Ruta para la raíz
 router.get('/', (req, res) => {
