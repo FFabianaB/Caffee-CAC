@@ -11,7 +11,7 @@ const sectionsRouter = require('./routes/sections');
 
 // Usar las rutas
 app.use('/', indexRoutes);
-app.use('/sections', sectionsRouter);
+app.use('/', sectionsRouter);
 
 // Exportar la aplicación para Vercel
 module.exports = app;
