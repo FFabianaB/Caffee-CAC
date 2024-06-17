@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, '../public')));
 
 // Importar las rutas
-const indexRouter = require('./routes/index');
+const indexRouter = require('./routes/index.js/index');
 const sectionsRouter = require('./routes/sections');
 
 // Usar las rutas
