@@ -5,22 +5,13 @@ const app = express();
 // Middleware para servir archivos estáticos en la carpeta 'public'
 app.use(express.static(path.join(__dirname, '../public')));
 
-// Rutas para cada sección
-app.get('/home', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/index.html'));
-});
+// Importar las rutas
+const indexRouter = require('./routes/index');
+const sectionsRouter = require('./routes/sections');
 
-app.get('/productos', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/pages/productos.html'));
-});
-
-app.get('/sucursales', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/pages/sucursales.html'));
-});
-
-app.get('/contacto', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/pages/contacto.html'));
-});
+// Usar las rutas
+app.use('/', indexRouter);
+app.use('/', sectionsRouter);
 
 // Exportar la aplicación para Vercel
 module.exports = app;
