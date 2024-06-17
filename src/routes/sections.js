@@ -2,10 +2,7 @@ const express = require('express');
 const path = require('path');
 const routes = express.Router();
 
-// Rutas para cada sección
-
-app.use(express.static(path.join(__dirname, '../public')));
-
+// Configurar las rutas
 routes.get('/productos', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/pages/productos.html'));
 });
