@@ -1,10 +1,16 @@
 :root{
     --colorAcceder: #9b6e55;
-    --colorBack:linear-gradient(to bottom, #903200, #cdb1a2, #f5ded2);
+    --bg:linear-gradient(to bottom, #7c5429,  #341601);
     --boxColor: #3b2517;
     --btnColor:#5b3c1f;
     --btnColorHover:#b29172;
     --tituloAcceder:#24170b;
+}
+body{
+	background: var(--bg) ;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
 }
 
 .header{
