@@ -1,0 +1,32 @@
+{
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "Producto 1",
+        "descripcion": "Cafe y medialunas",
+        "precio": 25.00,
+        "categoria": "Desayuno",
+        "stock": 10,
+        "imagen": "url_imagen_camiseta_roja.jpg"
+      },
+      {
+        "id": 2,
+        "nombre": "Producto 2",
+        "descripcion": "Cafe negro sin azúcar",
+        "precio": 80.00,
+        "categoria": "cafe",
+        "stock": 15,
+        "imagen": "url_imagen_zapatillas_deportivas.jpg"
+      },
+      {
+        "id": 3,
+        "nombre": "Producto 3",
+        "descripcion": "Pastel de chocolate",
+        "precio": 1500.00,
+        "categoria": "Postre",
+        "stock": 5,
+        "imagen": "url_imagen_laptop_gamer.jpg"
+      }
+    ]
+  }
+  
