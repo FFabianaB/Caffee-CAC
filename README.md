@@ -9,17 +9,20 @@ Ademas es responsive para celulares y tabletas.
 -------------------------------------------------------------------
 proyecto/
 ├── node_modules/  # Dependencias de Node.js
-├── src/         # Código fuente de la aplicación
+├── src/      # Código fuente de la aplicación
 │   ├── assets/      # Recursos estáticos (imágenes, CSS, etc.)
 │   ├── components/  # Componentes reutilizables
 │   ├── controllers/ # Controladores de las rutas
+│   ├── model       
+│   │   └── data/    # Archivos json
 │   ├── index.js     # Punto de entrada de la aplicación
 │   ├── models/      # Modelos de datos
 │   └── routes/      # Rutas de la aplicación
-├── public/      # Archivos estáticos para servir al cliente
-│   ├── IMG/        # Recursos estáticos (imágenes,favicon)
+├── public/   # Archivos estáticos para servir al cliente
+│   ├── favicon.icon       
+│   ├── IMG/        # Recursos estáticos (imágenes)
 │   ├── styles/     # Hojas de estilo CSS
 │   ├── pages/      # Secciones del sitio web
 │   ├── index.html  # Página principal del sitio web
 │   └── scripts/    # Archivos JavaScript del lado del cliente
-└── package.json  # Archivo de configuración de Node.js
+└── package.json # Archivo de configuración de Node.js
