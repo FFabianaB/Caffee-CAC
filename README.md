@@ -19,7 +19,7 @@ proyecto/
 │   ├── models/      # Modelos de datos
 │   └── routes/      # Rutas de la aplicación
 ├── public/   # Archivos estáticos para servir al cliente
-│   ├── favicon.icon       
+│   ├── favicon.ico       
 │   ├── IMG/        # Recursos estáticos (imágenes)
 │   ├── styles/     # Hojas de estilo CSS
 │   ├── pages/      # Secciones del sitio web

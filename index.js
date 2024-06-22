@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 
 const PORT = process.env.PORT || 3000;
-
+// Middleware para servir archivos estáticos en la carpeta 'public'
 app.use(express.static(path.join(__dirname, 'public')));
 
 
@@ -18,10 +18,7 @@ app .listen(PORT, () => {
 // Ruta para productos.html (opcional si se quiere una ruta específica)
 app.get('/pages/productos.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/pages/productos.html'));
-  });
-
-// Middleware para servir archivos estáticos en la carpeta 'public'
-app.use(express.static(path.join(__dirname, '../public')));
+});
 
 // Importar las rutas
 const indexRouter = require('./src/routes/index.routes');
