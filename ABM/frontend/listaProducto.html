@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Películas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Listado de Productos</h1>
+    <ul id="productosLista"></ul>
+
+
+    <button onclick="window.location.href='productos.html'">Volver</button>
+
+    <script>
+        const apiUrl = 'http://localhost:3000';
+
+        function fetchProductos() {
+            fetch(`${apiUrl}/productos`)
+
+                .then(response => response.json())
+                .then(data => {
+                    const productoList = document.getElementById('productosLista');
+                    productoList.innerHTML = '';
+                    data.forEach(producto => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `<strong>Nombre: ${producto.nombre}</strong>`;
+                        li.innerHTML += `<br>Descripción: ${producto.descripcion}`;
+                        li.innerHTML += `<br>Precio:${producto.precio}`;
+                        li.innerHTML += `<br>Stock: ${producto.stock}`;
+                                                
+                        productoList.appendChild(li);
+                    });
+                });
+        }
+        fetchProductos();
+    </script>
+</body>
+</html>

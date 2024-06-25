@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1719258574372,
+    "nombre": "cafe",
+    "descripcion": "colombia",
+    "precio": "6000",
+    "stock": "50"
+  },
+  {
+    "id": 1719341957404,
+    "nombre": "cafe",
+    "descripcion": "samoa",
+    "precio": "5000",
+    "stock": "20"
+  },
+  {
+    "id": 1719342035606,
+    "nombre": "servicio",
+    "descripcion": "catering",
+    "precio": "50000",
+    "stock": "500"
+  }
+]

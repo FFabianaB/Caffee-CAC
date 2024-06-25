@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Coffee App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h1>4Coffee ABM</h1>
+    
+    <div id="app">
+        <h2>ABM Productos</h2> 
+        
+        <form id="productosForm">
+            <input type="text" id="nombreProducto" placeholder="Nombre del producto" required>
+            <input type="text" id="descripProducto" placeholder="Descripción" required>
+            <input type="number" id="precioProducto" placeholder="Precio" required>
+            <input type="number" id="stockProducto" placeholder="Stock" required>            
+            <button type="submit">Agregar Producto</button>
+        </form>
+        
+        <ul id="productosLista"></ul>
+        <button onclick="window.location.href='listaProducto.html'">Ver Productos</button>
+    </div>
+    
+    <script src="scripts.js"></script>
+
+</body>
+</html>
